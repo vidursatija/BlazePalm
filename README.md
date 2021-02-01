@@ -1,6 +1,6 @@
 # BlazePalm
 
-BlazeFace is a fast, light-weight 2-part hand landmark detector from Google Research. [Read more](https://google.github.io/mediapipe/solutions/hands.html), [Paper on arXiv](https://arxiv.org/abs/2006.10214)
+BlazePalm is a fast, light-weight 2-part hand landmark detector from Google Research. [Read more](https://google.github.io/mediapipe/solutions/hands.html), [Paper on arXiv](https://arxiv.org/abs/2006.10214)
 
 A pretrained model is available as part of Google's [MediaPipe](https://github.com/google/mediapipe/blob/master/mediapipe/docs/hand_tracking_mobile_gpu.md) framework.
 
@@ -8,7 +8,7 @@ A pretrained model is available as part of Google's [MediaPipe](https://github.c
 
 Besides a bounding box, BlazePalm also predicts 21 3D keypoints for hand landmarks (5 fingers x 4 keypoints + 1 wrist)
 
-Because BlazeFace is designed for use on mobile devices, the pretrained model is in TFLite format. However, I wanted to use it in **PyTorch** and not *TensorFlow*. I also ported the PyTorch model to **CoreML** because the model is made for phones.
+Because BlazePalm is designed for use on mobile devices, the pretrained model is in TFLite format. However, I wanted to use it in **PyTorch** and not *TensorFlow*. I also ported the PyTorch model to **CoreML** because the model is made for phones.
 
 There are 2 parts to the model:
 1. Hand detector. It is a classic single shot detector(SSD).
